@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>XuanHuynh | frontend 23</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/intense/js/parallax.min.js"></script>
+
+</head>
+
+<body>
+    <div class="bg parallax-window" data-parallax="scroll" data-image-src="/vanmanh01/images/home-bg.jpg"></div>
+    <div class="banner">
+        <header>
+            <h2>Soft Landing</h2>
+            <nav>
+                <li>Home</li>
+                <li>Features</li>
+                <li>About us</li>
+                <li>Pricing</li>
+                <li>Contact</li>
+            </nav>
+            <p><a href="https://vanmanh01.herokuapp.com/">vanManh01.herokuapp.com</a></p>
+        </header>
+        <p>Professional landing page</p>
+        <h1>We help you manager your website successfully!</h1>
+        <form action="">
+            <input type="email" name="mail" id="" placeholder="Enter your email">
+            <button type="submit">Get started</button>
+        </form>
+    </div>
+    <div class="overlay"></div>
+
+    <section class="section1 container">
+        <div>
+            <h2>What you get</h2>
+            <nav>
+                <li><a href="#">Responsive</a></li>
+                <li><a href="#">Mobile</a></li>
+                <li><a href="#">Support</a></li>
+            </nav>
+            <h3>Minimal Design</h3>
+            <br>
+            <p>Nam feugiat a ante sollicitudin luctus. Quisque eget placerat massa. Ut quis ligula ornare, pellentesque
+                velit eget, vestibulum est. Donec pretium tristique elit eget sodales. Pellentesque posuere.</p>
+            <h3>Easy to use</h3>
+            <br>
+            <p>Aliquam massa massa, consectetur non mattis fringilla, sodales ac turpis. Morbi ac felis sagittis,
+                faucibus mauris vitae, placerat mauris.</p>
+        </div>
+        <img src="./images/feature-mockup.png" alt="" class="pt-5">
+    </section>
+    <br>
+    <!-- <div class="back-to-top" title="Trở lên đầu trang"><i class="fas fa-chevron-circle-up "></i></div>
+    <div class="go-to-bottom" title="Trở xuống cuối trang"><i class="fas fa-chevron-circle-down"></i></div> -->
+
+    <!-- Back To Top -->
+    <script>
+        $(document).ready(function () {
+            $(".go-to-bottom").click(function () {
+                return $("body, html").animate({
+                    scrollTop: $(document).height()
+                }, 800)
+            });
+            $(".back-to-top").click(function () {
+                return $("body,html").animate({
+                    scrollTop: 0
+                }, 500)
+            });
+        });
+    </script>
+   
+
+</body>
+
+</html>
